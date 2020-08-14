@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Open+sans:100,200,300,400,500,600,700|Amatic+SC:100,200,300,400,500,600,700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css");
 
 /******************************remove unwanted general stylings*******************************/
 
@@ -173,7 +174,7 @@ header {
 
 
 main {
-    margin-top: 150px;
+    margin-top: 110px;
 }
 
 .navbar-brand > img {

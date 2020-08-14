@@ -55,30 +55,21 @@
         <main>
             <!--Hero Image Section-->
             <section>
-                <div class="container-fluid heroimage">
-                    <div class="row container">
-                        <div class="col-12">
-                            <div class="callout jumbotron text-center">
-                                <h1 class="largeheading">Covid-19 Update<i class="fas fa-people-arrows ml-3"></i></h1>
-                                <hr class="jumbo-block-divider">
-                                <p class="darktext mediumtext">Abbey Physio will be reopening on a phased basis from May 11th. We will be following all guidelines issued by the HSE to minimise any risk to our patients and staff. For patients isolating or cocooning video consultations are also available. Get in touch for more information.</p>
-                                <!--Code taken from Modal examples in Bootstrap Documentation-->
-                                <button type="button" class="btn btnwide pinkbackground" data-toggle="modal" data-target=".bd-example-modal-sm">Call Us<i class="fas fa-phone ml-3"></i></button>
-                                <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-label="mySmallModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered modal-sm">
-                                        <div class="modal-content mediumheading">
-                                            <div class="modal-body">
-                                                Call: 086 303 9372
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btnwide pinkbackground m-auto" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                        <img src="https://www.fillmurray.com/1200/675" />
+                        </li>
+                        <li>
+                        <img src="https://placekitten.com/1200/675" />
+                        </li>
+                        <li>
+                        <img src="https://baconmockup.com/1200/675" />
+                        </li>
+                        <li>
+                        <img src="https://www.placecage.com/1200/675" />
+                        </li>
+                    </ul>
                 </div>
             </section>  
             <!--More Information Section-->
@@ -158,5 +149,12 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+        <!-- FlexSlider -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" src="assets/js/flexslider.js"></script>
     </body>
 </html>
