@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Open+sans:100,200,300,400,500,600,700|Amatic+SC:100,200,300,400,500,600,700&display=swap');
+
+
+:root {
+    font-size: 62.5%;
+}
+
+/******************************remove unwanted general stylings*******************************/
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #252a3f;
+}
+
+/******************************BACKGROUND COLOURS*******************************/
+
+.bluebackground {
+    background-color: #022D41;
+}
+
+.oceanbackground {
+    background-color: #1AA6B7;
+}
+
+.pinkbackground {
+    background-color: #f05365;
+}
+
+/******************************General Heading and Text Styles*******************************/
+
+body {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    color: #022D41;
+}
+
+.titleheading {
+    font-family: "Amatic SC", cursive;
+    font-weight: bold;
+    color: #022D41;
+    font-size: 4.5rem;
+}
+
+.largeheading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #022D41;
+    font-size: 35px;
+}
+
+.mediumheading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #022D41;
+    font-size: 25px;
+}
+
+.smallheading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #022D41;
+    font-size: 20px;
+}
+
+.whitetext {
+    color: #fafafa;
+}
+
+.darktext {
+    color: #022D41;
+}
+
+.mediumtext {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.smalltext {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+/******************************Buttons******************************/
+
+.btn {
+    border-color: #f05365;
+    font-family: "Roboto", sans-serif;
+    color: #fafafa;
+    font-size: 20px;
+    font-weight: 500;
+    max-height: 50px;
+    margin-top: 35px;
+}
+
+.btn>a {
+    color:#fafafa;
+    text-decoration: none;
+}
+
+.btn:hover {
+    border-color: #03A89E;
+    background-color: #03A89E;
+    color:#fafafa;
+}
+
+.btnwide {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 25px;
+}
+
+.btnsmall {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/******************************Blockdividers******************************/
+
+.jumbo-block-divider {
+    width: 90%;
+    height: 2px;
+    border: 0;
+    background-color: #38405F;
+}
+
+/**code below for hr fade styling taken from https://codepen.io/ibrahimjabbari/pen/ozinB**/
+
+.block-divider {
+    width: 250px;
+    border: 0; 
+    height: 2px; 
+    background-image: -webkit-linear-gradient(left, #fafafa, #38405F, #fafafa);
+    background-image: -moz-linear-gradient(left, #fafafa, #38405F, #fafafa);
+    background-image: -ms-linear-gradient(left, #fafafa, #38405F, #fafafa);
+    background-image: -o-linear-gradient(left, #fafafa, #38405F, #fafafa); 
+}
+
+.wide-block-divider {
+    width: 75%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.block-divider-white {
+    background-image: -webkit-linear-gradient(left, #38405F, #fafafa, #38405F);
+    background-image: -moz-linear-gradient(left, #38405F, #fafafa, #38405F);
+    background-image: -ms-linear-gradient(left, #38405F, #fafafa, #38405F);
+    background-image: -o-linear-gradient(left, #38405F, #fafafa, #38405F);
+}
+
+/******************************HEADER&NAVBAR*******************************/
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
+main {
+    margin-top: 150px;
+}
+
+.navbar-brand > img {
+    max-height: 100px;
+    max-width: 100px;
+    padding: 10px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.navbar {
+    padding:0;
+}
+
+.nav-item {
+    width: 150px;
+    margin: auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    text-align: center;
+    color: #fafafa;
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    color: #022D41;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link{
+    color: #022D41;
+    font-weight: 600;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(240,83,101);
+}
+
+.dropdown-menu>a:hover {
+    color: #fafafa;
+    background-color: rgba(240,83,101,0.85);
+}
+
+.dropdown-item {
+    text-align: center;
+    color: #fafafa;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-link {
+    padding: 5px;
+}
+
+/***********************************HERO IMAGE********************************/
+
+.heroimage {
+    min-height: 500px;
+
+    background: url("../images/physiobanner.jpg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.jumbotron {
+    background-color: rgba(120,161,187,0.6);
+    border-radius: .5rem;
+    width: 70%;
+    margin: auto;
+}
+
+/***********************************Information Section********************************/
+
+.container-information {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/***********************************About Content********************************/
+
+.container-about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.headshot {
+    display:block;
+    margin: auto;
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius: 50%;
+}
+
+/***********************************Services Content********************************/
+
+.container-services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.btn-services {
+    margin-top: 0;
+    width: 100%;
+    border: 0px;
+    color: #252a3f;
+    text-align: left;
+}
+
+.btn-services:hover {
+    background-color: rgba(120,161,187,0.75);
+    font-weight: 700;
+    color: #252a3f;
+    text-decoration: none;
+}
+
+.card-header {
+    background-color: rgba(120,161,187,0.25);
+    padding: 0;
+}
+
+.card {
+    width: 95%;
+    margin: auto;
+}
+
+/**********************************Contact Page Content Styling********************************/
+
+.container-contact {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+
+.contactform {
+    background-color: rgba(120,161,187,0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/***********************************Location Page Content Styling********************************/
+
+.container-location {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#map {
+    width: 100%;
+    height: 600px;
+}
+
+.address {
+    background-color: rgba(120,161,187,0.5);
+    border-radius: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/***********************************FOOTER********************************/
+
+.footercontent {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.footercontent>p {
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    color: #fafafa;
+    font-size: 15px;
+    margin-bottom: 1px;
+}
+
+.googlemap {
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+.pinkhover:hover {
+    color: #f05365;
+}
+
+/***********************************Mobile Content Adjustment********************************/
+
+/**Medium & below**/
+
+@media (max-width: 991.98px) {
+
+.jumbotron {
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.nav-item {
+    width: 100%;
+    margin: auto;
+}
+
+.headshot {
+    width:280px;
+    height:280px;
+}
+
+}
+
+/**Small & Below**/
+
+@media (max-width: 767.98px) {
+
+body {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    font-size: 16px;
+}
+
+main {
+    margin-top: 120px;
+}
+
+.navbar-brand > img {
+    max-height: 70px;
+    max-width: 70px;
+    padding: 10px;
+}
+
+.locationfooter {
+    padding-right: 65px;
+    padding-left: 65px;
+}
+
+}
+
+/**Extra Small & Below**/
+
+@media (max-width: 575.98px) { 
+body {
+    text-align: left;
+}
+
+main {
+    margin-top: 110px;
+}
+
+
+.largeheading {
+    font-size: 25px;
+}
+
+.mediumheading {
+    font-size: 20px;
+}
+
+.mediumtext {
+    font-size: 16px;
+}
+
+.navbar-brand > img {
+    max-height: 60px;
+    max-width: 60px;
+    padding: 5px;
+}
+
+.locationfooter {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+}
+
+/**IPhone 5 Styling**/
+
+@media (max-width: 400.98px) { 
+
+.navbar-brand > img {
+    max-height: 60px;
+    max-width: 60px;
+    padding: 5px;
+}
+
+.locationfooter {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.headshot {
+    width:270px;
+    height:270px;
+}
+
+ }
