@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Open+sans:100,200,300,400,500,600,700|Amatic+SC:100,200,300,400,500,600,700&display=swap');
 
-
-:root {
-    font-size: 62.5%;
-}
-
 /******************************remove unwanted general stylings*******************************/
 
 .row {
@@ -43,7 +38,7 @@ a:hover {
 body {
     font-family: "Roboto", sans-serif;
     text-align: justify;
-    font-size: 18px;
+    font-size: 20px;
     color: #022D41;
 }
 
@@ -51,28 +46,28 @@ body {
     font-family: "Amatic SC", cursive;
     font-weight: bold;
     color: #022D41;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
 }
 
 .largeheading {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     color: #022D41;
-    font-size: 35px;
+    font-size: 2rem;
 }
 
 .mediumheading {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     color: #022D41;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .smallheading {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     color: #022D41;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .whitetext {
@@ -86,13 +81,13 @@ body {
 .mediumtext {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: 23px;
+    font-size: 1rem;
 }
 
 .smalltext {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 0.5rem;
 }
 
 .bold {
@@ -204,7 +199,7 @@ main {
     text-align: center;
     color: #fafafa;
     font-family: "Open Sans", sans-serif;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -230,7 +225,7 @@ main {
     text-align: center;
     color: #fafafa;
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -384,6 +379,14 @@ main {
 
 @media (max-width: 991.98px) {
 
+body {
+    font-size:18px;
+}
+
+.titleheading {
+    font-size: 2.5rem;
+}
+
 .jumbotron {
     width: 100%;
     margin: auto;
@@ -413,6 +416,10 @@ body {
     font-size: 16px;
 }
 
+.titleheading{
+    font-size: 2rem;
+}
+
 main {
     margin-top: 120px;
 }
@@ -435,6 +442,10 @@ main {
 @media (max-width: 575.98px) { 
 body {
     text-align: left;
+}
+
+.titleheading{
+    font-size: 1.75rem;
 }
 
 main {
@@ -470,6 +481,11 @@ main {
     height: 400px;
 }
 
+.navbar-toggler{
+    padding-left: 6px;
+    padding-right:6px;
+}
+
 }
 
 /**IPhone 5 Styling**/
@@ -477,9 +493,18 @@ main {
 @media (max-width: 400.98px) { 
 
 .navbar-brand > img {
-    max-height: 60px;
-    max-width: 60px;
+    max-height: 45px;
+    max-width: 45px;
     padding: 5px;
+}
+
+.titleheading{
+    font-size: 1.5rem;
+}
+
+.navbar-toggler{
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .locationfooter {
