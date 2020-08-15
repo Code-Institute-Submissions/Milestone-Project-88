@@ -23,7 +23,7 @@ a:hover {
 /******************************BACKGROUND COLOURS*******************************/
 
 .bluebackground {
-    background-color: #022D41;
+    background-color: #002060;
 }
 
 .oceanbackground {
@@ -31,7 +31,15 @@ a:hover {
 }
 
 .pinkbackground {
-    background-color: #f05365;
+    background-color: #fe424d;
+}
+
+.greybackground {
+    background-color: #EBECF0;
+}
+
+.whitebackground {
+    background-color: #ffffff;
 }
 
 /******************************General Heading and Text Styles*******************************/
@@ -40,7 +48,7 @@ body {
     font-family: "Roboto", sans-serif;
     text-align: justify;
     font-size: 20px;
-    color: #022D41;
+    color: #002060;
     margin: 0 0;
     padding: 0 0;
 }
@@ -48,28 +56,28 @@ body {
 .titleheading {
     font-family: "Amatic SC", cursive;
     font-weight: bold;
-    color: #022D41;
+    color: #002060;
     font-size: 2.5rem;
 }
 
 .largeheading {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    color: #022D41;
+    color: #002060;
     font-size: 2rem;
 }
 
 .mediumheading {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    color: #022D41;
+    color: #002060;
     font-size: 1.5rem;
 }
 
 .smallheading {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    color: #022D41;
+    color: #002060;
     font-size: 1rem;
 }
 
@@ -78,7 +86,7 @@ body {
 }
 
 .darktext {
-    color: #022D41;
+    color: #002060;
 }
 
 .mediumtext {
@@ -196,11 +204,11 @@ main {
 }
 
 .nav-item.active {
-    color: #022D41;
+    color: #002060;
 }
 
 .navbar-dark .navbar-nav .active>.nav-link{
-    color: #022D41;
+    color: #002060;
     font-weight: 600;
 }
 
@@ -243,6 +251,7 @@ main {
 .flexslider {
     border: 0px;
     position: relative;
+    margin: 0 0 40px;
 }
 
 .imageoverlay{
@@ -266,8 +275,22 @@ main {
     font-size: 5.0rem;
 }
 
+/*******************************Show Cards********************************/
+.container-information {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
 
+.showcard {
+    padding: 10px;
+    width: 100%;
+    border: 10px solid white;
+}
 
+.showcard img {
+    margin-bottom: 10px;
+}
 /***********************************FOOTER********************************/
 
 .footercontent {
