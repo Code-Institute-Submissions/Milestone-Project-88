@@ -158,7 +158,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 4;
     height: 110px;
     width: 100vw;
     display: flex;
@@ -225,13 +225,48 @@ main {
     padding: 5px;
 }
 
-/***********************************Information Section********************************/
+/***********************************Flexslider Adjustments****************/
 
-.container-information {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
+.flex-viewport {
+    max-height: -o-calc(100vh - 110px); /* opera */
+    max-height: -webkit-calc(100vh - 110px); /* google, safari */
+    max-height: -moz-calc(100vh - 110px); /* firefox */
 }
+
+.flex-viewport .slides img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+.flexslider {
+    border: 0px;
+    position: relative;
+}
+
+.imageoverlay{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0,0,0,0.35);
+}
+
+.overlaytext{
+    font-family: "Amatic SC", cursive;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 7.0rem;
+}
+
+.overlayIcon{
+    font-size: 5.0rem;
+}
+
+
 
 /***********************************FOOTER********************************/
 
@@ -260,11 +295,14 @@ main {
 
 /***********************************Mobile Content Adjustment********************************/
 
+/**Large & below**/
+
 @media (max-width: 1199.98px) {
     .nav-item{
         border-bottom: solid 1px white;
         width: 100%;
     }
+
 }
 
 /**Medium & below**/
@@ -301,8 +339,18 @@ body {
     font-size: 2rem;
 }
 
+header {
+    height: 75px;
+}
+
 main {
-    margin-top: 55px;
+    margin-top: 75px;
+}
+
+.flex-viewport {
+    max-height: -o-calc(100vh - 75px); /* opera */
+    max-height: -webkit-calc(100vh - 75px); /* google, safari */
+    max-height: -moz-calc(100vh - 75px); /* firefox */
 }
 
 .navbar-brand > img {
@@ -315,6 +363,7 @@ main {
     padding-right: 65px;
     padding-left: 65px;
 }
+
 
 }
 
@@ -329,9 +378,6 @@ body {
     font-size: 1.75rem;
 }
 
-main {
-    margin-top: 55px;
-}
 
 .largeheading {
     font-size: 25px;
@@ -364,6 +410,13 @@ main {
 .navbar-toggler{
     padding-left: 6px;
     padding-right:6px;
+}
+
+.flex-viewport .slides img {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    height: 350px;
 }
 
 }
