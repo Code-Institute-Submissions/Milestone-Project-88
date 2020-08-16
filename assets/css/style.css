@@ -136,8 +136,7 @@ body {
 }
 
 .readmore-btn {
-    border-color: #f05365;
-    background-color:#f05365;;
+    background-color: rgb(3, 94, 11);  
     font-family: "Roboto", sans-serif;
     color: #fafafa;
     font-size: 1.25rem;
@@ -148,7 +147,7 @@ body {
 }
 
 .readmore-btn:hover {
-    background-color: rgb(3, 94, 11);  
+    background-color: #f05365;
     color: #fafafa;
 }
 
@@ -330,11 +329,11 @@ main {
 }
 
 .showContent a.readmore-btn {
-    background-color: rgb(3, 94, 11);
+    background-color: #f05365;
 }
 
 .showContent a.readmore-btn:hover {
-    background-color: #f05365;
+    background-color: rgb(3, 94, 11);
     color: #fafafa;
     text-decoration: none;
 }
