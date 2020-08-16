@@ -315,7 +315,20 @@ main {
 }
 
 .weatherInfo {
-    border-bottom: 1px solid #002060;
+    text-align: center;
+}
+
+.weatherInfo span {
+    width: 25%;
+}
+
+.weatherInfo img{
+    height: 50px;
+}
+
+.hiddenText {
+    height: 0px;
+    overflow: hidden;
 }
 
 /***********************************FOOTER********************************/
