@@ -146,7 +146,7 @@ main {
 }
 
 .nav-item {
-    width: 150px;
+    width: 160px;
     margin: auto;
 }
 
@@ -305,6 +305,13 @@ main {
    position: absolute;
    top: 0;
    width: 100%;
+}
+
+/**********************************Attractions****************************/
+.attractionHeader {
+    text-align: center;
+    padding: 20px;
+    margin-top:20px;
 }
 
 /***********************************FOOTER********************************/
