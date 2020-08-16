@@ -18,17 +18,37 @@ $(".readmore-btn").on('click', function (){
 
 //Code adapted from Tutorial @ https://bithacker.dev/fetch-weather-openweathermap-api-javascript
 function weatherBalloon( lat, lon ) {
-  var key = '1ff96bbb948a7c7b5371e9abe2d4b304';
-  fetch('https://api.openweathermap.org/data/2.5/onecall?lat='+ lat +'&lon='+ lon +'&exclude=minutely&appid='+ key)  
-  .then(function(resp) { return resp.json() }) // Convert data to json
-  .then(function(data) {
-    console.log(data);
-  })
-  .catch(function() {
-    // catch any errors
-  });
+    var key = '1ff96bbb948a7c7b5371e9abe2d4b304';
+    var url = 'https://api.openweathermap.org/data/2.5/onecall?lat='+ lat +'&lon='+ lon +'&exclude=minutely,hourly&appid='+ key;
+    fetch(url)  
+    .then(function(resp) { return resp.json() }) // Convert data to json
+    .then(function(data) {
+        console.log(data);
+        drawWeather(data); // Call drawWeather
+        console.log('Test');
+	})
+    .catch(function() {
+    console.log('Fail');
+    });
 }
 
 window.onload = function() {
     this.weatherBalloon ( -50.941961, -73.406960 );
 };
+
+function drawWeather( d ) {
+    var i;
+    for (i = 0; i < 2; i++){
+        var celcius = Math.round(parseFloat(d.daily[i].temp.day)-273.15);
+        var fahrenheit = Math.round(((parseFloat(d.daily[i].temp.day)-273.15)*1.8)+32);
+        var unixTimestamp = d.daily[i].dt;
+        var milliseconds = unixTimestamp * 1000;
+        var dateObject = new Date(milliseconds);
+        var date = dateObject.toLocaleString('En-US', {weekday: 'long'});
+        document.getElementById('description_' + [i]).innerHTML = d.daily[i].weather[0].description;
+        document.getElementById('temp_' + [i]).innerHTML = celcius + '&deg;';
+        document.getElementById('date_' + [i]).innerHTML = date;
+        var imgsrc = ('http://openweathermap.org/img/wn/' + d.daily[i].weather[0].icon + '@2x.png');
+        document.getElementById('weatherIcon_' + [i]).src=imgsrc;
+    }
+}
