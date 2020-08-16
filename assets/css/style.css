@@ -11,13 +11,9 @@
     padding:0;
 }
 
-a {
-    text-decoration: none;
-}
 
 a:hover {
     text-decoration: none;
-    color: #252a3f;
 }
 
 /******************************BACKGROUND COLOURS*******************************/
@@ -137,6 +133,23 @@ body {
 .btnsmall {
     font-size: 16px;
     margin-top: 15px;
+}
+
+.readmore-btn {
+    border-color: #f05365;
+    background-color:#f05365;;
+    font-family: "Roboto", sans-serif;
+    color: #fafafa;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 5px 15px;
+}
+
+.readmore-btn:hover {
+    background-color: rgb(3, 94, 11);  
+    color: #fafafa;
 }
 
 /******************************Blockdividers******************************/
@@ -282,12 +295,16 @@ main {
     text-align: center;
 }
 
-.showcard {
-    padding: 10px;
-    width: 100%;
+.showcardContainer {
     border: 10px solid white;
+}
+
+.showcard {
+    padding: 15px 15px 20px 15px;
+    width: 100%;
+    border: 0px;
     border-radius: 8px;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
 }
 
 .showcard img {
@@ -296,9 +313,32 @@ main {
 }
 
 .showcard p {
-    height: 90px;
+    height: 0px;
     overflow: hidden;
 }
+
+.showcardLink {
+    color: #002060;
+    font-weight: bold;
+}
+
+.showcardLink:hover {
+    color: #f05365;
+}
+.showContent p {
+    height: auto;
+}
+
+.showContent a.readmore-btn {
+    background-color: rgb(3, 94, 11);
+}
+
+.showContent a.readmore-btn:hover {
+    background-color: #f05365;
+    color: #fafafa;
+    text-decoration: none;
+}
+
 /***********************************FOOTER********************************/
 
 .footercontent {
