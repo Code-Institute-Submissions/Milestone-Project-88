@@ -46,3 +46,28 @@ function drawWeather( d ) {
         document.getElementById('weatherIcon_' + [i]).src=imgsrc;
     }
 }
+
+function restaurantList (LocationID) {
+    fetch("https://tripadvisor1.p.rapidapi.com/restaurants/list?restaurant_tagcategory_standalone=10591&lunit=km&restaurant_tagcategory=10591&limit=30&currency=USD&lang=en_US&location_id=" + LocationID, {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
+		"x-rapidapi-key": "2ed47672a1mshfe827335d43a73ep158491jsnc62f265ff059"
+	}
+    })
+
+    .then(function(resp) { return resp.json() }) // Convert data to json
+    .then(function(data) {
+        console.log(data); // Call drawWeather
+	})
+    .then(response => {
+	console.log(response);
+    })
+    .catch(err => {
+	console.log(err);
+    });
+}
+
+window.onload = function() {
+  this.restaurantList(670171);
+}
