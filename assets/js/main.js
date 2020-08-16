@@ -1,3 +1,5 @@
+//CSS Effects
+
 $(".showcard").mouseover(function(){
   $(this).css({"background-color": "rgba(26,166,183,0.25)"});
 });
@@ -15,8 +17,9 @@ $(".readmore-btn").on('click', function (){
 
 })
 
+//OpenWeatherMap API Connection
 
-//Code adapted from Tutorial @ https://bithacker.dev/fetch-weather-openweathermap-api-javascript & https://openweathermap.org/api/one-call-api#list1
+//Code adapted from Tutorial @ https://bithacker.dev/fetch-weather-openweathermap-api-javascript & https://openweathermap.org/api/one-call-api#list
 function weatherBalloon( lat, lon ) {
     var key = '1ff96bbb948a7c7b5371e9abe2d4b304';
     var url = 'https://api.openweathermap.org/data/2.5/onecall?lat='+ lat +'&lon='+ lon +'&exclude=minutely,hourly&appid='+ key;
@@ -47,6 +50,9 @@ function drawWeather( d ) {
     }
 }
 
+//Trip Advisor API Connection via RapidAPI
+
+//Based on RapidAPI documentation for Trip Advisor https://rapidapi.com/apidojo/api/tripadvisor1?endpoint=apiendpoint_c0d6decf-e541-447d-bc87-2fa023cd96d6
 function restaurantList (LocationID) {
     fetch("https://tripadvisor1.p.rapidapi.com/restaurants/list?restaurant_tagcategory_standalone=10591&lunit=km&restaurant_tagcategory=10591&limit=30&currency=USD&lang=en_US&location_id=" + LocationID, {
 	"method": "GET",
@@ -58,14 +64,30 @@ function restaurantList (LocationID) {
 
     .then(function(resp) { return resp.json() }) // Convert data to json
     .then(function(data) {
-        console.log(data); // Call drawWeather
+        console.log(data);
+        createRestaurentMarket(data);
 	})
-    .then(response => {
-	console.log(response);
-    })
     .catch(err => {
 	console.log(err);
     });
+}
+
+function createRestaurentMarket (d) {
+    var i;
+    var restaurantMarkers = [];
+    for (var i=0; i<d.data.length; i++) {
+        if ((typeof d.data[i].name !== "undefined")||(typeof d.data[i].latitude !== "undefined")){
+        restaurantMarkers[i] = {
+        name: d.data[i].name,
+        lat: d.data[i].latitude,
+        long: d.data[i].longitude,
+        stars: d.data[i].rating,
+        description: d.data[i].description,
+        urlRestaurant: d.data[i].web_url,
+        }
+        }
+    }
+    console.log(restaurantMarkers)
 }
 
 window.onload = function() {
