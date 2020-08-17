@@ -90,19 +90,18 @@ function mapRestaurants (d) {
         }
     }
     console.log(restaurantMarkers)
-    console.log(2);
-    initMap();
+    initMap(restaurantMarkers);
+    fitBoundsToVisibleMarkers(restaurantMarkers);
 }
 
-function initMap() {
-    console.log(1);
+function initMap(markers) {
     var mapOptions = {
-        center: new google.maps.LatLng(restaurantMarkers[0].lat, restaurantMarkers[0].long),
+        center: new google.maps.LatLng(markers[0].lat, markers[0].long),
         zoom: 10,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: 'satellite'
     };
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
- 
+    
     //Create and open InfoWindow.
     var infoWindow = new google.maps.InfoWindow();
  
@@ -126,6 +125,20 @@ function initMap() {
     }
 }
 
+function fitBoundsToVisibleMarkers(markers) {
+
+    var bounds = new google.maps.LatLngBounds();
+
+    for (var i=0; i<markers.length; i++) {
+            var latlng = new google.maps.LatLng(markers[i].lat, markers[i].long);
+            bounds.extend(latlng);
+            console.log(bounds);    
+        }
+    
+    google.maps.Map.fitBounds(bounds);
+    
+
+}
 
 //window.onload = function() {
 //  this.restaurantList(670171);
