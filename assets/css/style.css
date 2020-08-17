@@ -505,6 +505,14 @@ footer .row {
         font-size: 1.5rem;
     }
 
+    .largeheading{
+        font-size: 2.0rem;
+    }
+
+    .mediumheading {
+        font-size: 1.25rem;
+    }
+
     .navbar-toggler{
         padding-left: 4px;
         padding-right: 4px;
