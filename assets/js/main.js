@@ -65,31 +65,77 @@ function restaurantList (LocationID) {
     .then(function(resp) { return resp.json() }) // Convert data to json
     .then(function(data) {
         console.log(data);
-        createRestaurentMarket(data);
+        mapRestaurants (data);
 	})
     .catch(err => {
 	console.log(err);
     });
 }
 
-function createRestaurentMarket (d) {
-    var i;
+
+
+function mapRestaurants (d) {
     var restaurantMarkers = [];
-    for (var i=0; i<d.data.length; i++) {
-        if ((typeof d.data[i].name !== "undefined")||(typeof d.data[i].latitude !== "undefined")){
-        restaurantMarkers[i] = {
-        name: d.data[i].name,
-        lat: d.data[i].latitude,
-        long: d.data[i].longitude,
-        stars: d.data[i].rating,
-        description: d.data[i].description,
-        urlRestaurant: d.data[i].web_url,
-        }
+    function createRestaurentMarker (d){
+        var i;
+        for (var i=0; i<d.data.length; i++) {
+            if ((typeof d.data[i].name !== "undefined")&&(typeof d.data[i].latitude !== "undefined")){
+            restaurantMarkers[i] = {
+            name: d.data[i].name,
+            lat: d.data[i].latitude,
+            long: d.data[i].longitude,
+            stars: d.data[i].rating,
+            description: d.data[i].description,
+            urlRestaurant: d.data[i].web_url,
+            }
+            }
         }
     }
+
     console.log(restaurantMarkers)
+
+    function loadMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(restaurantMarkers[0].lat, restaurantMarkers[0].long),
+            zoom: 10,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+ 
+        //Create and open InfoWindow.
+        var infoWindow = new google.maps.InfoWindow();
+ 
+        for (var i = 0; i < restaurantMarkers.length; i++) {
+            var data = restaurantMarkers[i];
+            var myLatlng = new google.maps.LatLng(data.lat, data.long);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: data.name
+            });
+ 
+            //Attach click event to the marker.
+            (function (marker, data) {
+                google.maps.event.addListener(marker, "click", function (e) {
+                    //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
+                    infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.description + "</div>");
+                    infoWindow.open(map, marker);
+                });
+            })(marker, data);
+    }
+}
+    
 }
 
-window.onload = function() {
-  this.restaurantList(670171);
-}
+
+
+//window.onload = function() {
+//  this.restaurantList(670171);
+//}
+
+//window.onload = function () {
+//        initMap();
+//    }
+
+
+

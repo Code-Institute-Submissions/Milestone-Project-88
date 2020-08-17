@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css"/>
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
-    <body onload="weatherBalloon (-50.9419, -73.4069)">
+    <body>
     <!--Header/Nav-->
         <header class="oceanbackground">
             <!--Title-->
@@ -125,6 +125,20 @@
                 </div>
             </section>
             <section>
+                <div class="col-12" id="map">
+                    <script>
+                    function initMap() {
+                            var mapOptions = {
+                                center: new google.maps.LatLng(-52.638442,-71.312472),
+                                zoom: 10,
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                            };
+                            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                    }
+                    </script>
+                </div>
+            </section>
+            <section>
                 <div class="container-fluid darkgreybackground">
                     <div class="container">   
                         <div class="row">
@@ -163,5 +177,25 @@
         <script type="text/javascript" src="assets/js/flexslider.js"></script>
         <!--Main Javascript File-->
         <script type="text/javascript" src="assets/js/main.js"></script>
+        <!--Google Maps API-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3ixlXSx8LZE5Hs95dw9Ba4dAalSK2JbY&callback=initMap&libraries=&v=weekly"></script>
+        <script>
+            function addLoadEvent(func) { 
+                var oldonload = window.onload; 
+                if (typeof window.onload != 'function') { 
+                    window.onload = func; 
+                } else { 
+                    window.onload = function() { 
+                    if (oldonload) { 
+                        oldonload(); 
+                    } 
+                    func(); 
+                    } 
+                } 
+                }
+                
+            addLoadEvent(weatherBalloon (-50.9419, -73.4069)); 
+            addLoadEvent(restaurantList(670171));
+        </script>
     </body>
 </html>
