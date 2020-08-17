@@ -78,15 +78,15 @@ function mapRestaurants (d) {
     
     var i;
     for (var i=0; i<d.data.length; i++) {
-        if ((typeof d.data[i].name !== "undefined")&&(typeof d.data[i].latitude !== "undefined")){
-            restaurantMarkers[i] = {
+        if ((typeof d.data[i].name !== "undefined")&&(typeof d.data[i].latitude !== "undefined")){          
+            restaurantMarkers.push({
             name: d.data[i].name,
             lat: d.data[i].latitude,
             long: d.data[i].longitude,
             stars: d.data[i].rating,
             description: d.data[i].description,
             urlRestaurant: d.data[i].web_url,
-            }
+            })  
         }
     }
     console.log(restaurantMarkers)
