@@ -56,7 +56,7 @@ function drawWeather( d ) {
 
 //Restaurant Locations
 function restaurantList (lat, lon) {
-    fetch('https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=30&currency=USD&distance=30&lunit=km&lang=en_US&latitude=' + lat + '&longitude=' + lon, {
+    fetch('https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=30&currency=USD&distance=15&lunit=km&lang=en_US&latitude=' + lat + '&longitude=' + lon, {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
@@ -77,7 +77,7 @@ function restaurantList (lat, lon) {
 
 //Hotel Locations
 function hotelList (lat, lon) {
-    fetch('https://tripadvisor1.p.rapidapi.com/hotels/list-by-latlng?lang=en_US&limit=30&currency=USD&&distance=30&latitude=' + lat + '&longitude=' + lon, {
+    fetch('https://tripadvisor1.p.rapidapi.com/hotels/list-by-latlng?lang=en_US&limit=30&currency=USD&&distance=15&latitude=' + lat + '&longitude=' + lon, {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
