@@ -71,7 +71,7 @@
                             </div>
                         </div>
                         <div class="row mb-5">
-                        <div class="col-12 col-md-8 text-center mb-3">
+                        <div class="col-12 col-md-7 text-center mb-3">
                             <h2 class="mediumheading">Welcome to Parque Nacional Torres del Paine</h2>
                             <hr class="block-divider wide-block-divider">
                             <div class="text-justify">
@@ -81,7 +81,7 @@
                                 <a href="javascript:void();" class="readmore-btn mb-3 text-center">Read More ▼</a>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 text-center">
+                        <div class="col-12 col-md-5 text-center">
                             <div class=" greybackground p-1 pt-3">
                                 <h2 class="mediumheading">5-day Forecast</h2>
                                 <div class="weatherInfo">
@@ -126,6 +126,15 @@
             </section>
             <section>
                 <div class="container mb-5">
+                    <div class="col-12 mb-3 text-center">
+                        <h2 class="mediumheading">Find Local Restaurants & Hotels</h2>
+                        <hr class="block-divider wide-block-divider">
+                        <select id="host">
+                            <option value="">Select Map View</option>
+                            <option value="Restaurants">Restaurants</option>
+                            <option value="Hotels">Hotels</option>
+                        </select>
+                    </div>
                     <div class="col-12" id="map"></div>
                 </div>
             </section>
@@ -173,8 +182,18 @@
                 } 
                 }
                 
-            addLoadEvent(weatherBalloon (-50.9419, -73.4069)); 
-            addLoadEvent(restaurantList(670171));
+            addLoadEvent(weatherBalloon (-51.083400, -72.982678)); 
+            addLoadEvent(restaurantList(-51.083400, -72.982678));
+        </script>
+        <script>
+        //Change Map Data based on user input
+        $(document).ready(function(){
+            $('#host').on('change', function() {
+            
+            if ( $('#host').val() == 'Restaurants' ) restaurantList(-51.083400, -72.982678);
+            else if ( $('#host').val() == 'Hotels' ) hotelList(-51.083400, -72.982678);
+            });
+        });
         </script>
     </body>
 </html>
