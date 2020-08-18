@@ -204,7 +204,7 @@ main {
 /***********************************Flexslider Adjustments****************/
 
 .flex-viewport {
-    max-height: -o-calc(100vh - 110px); /* opera */
+    max-height: calc(100vh - 110px); /* opera */
     max-height: -webkit-calc(100vh - 110px); /* google, safari */
     max-height: -moz-calc(100vh - 110px); /* firefox */
 }
@@ -462,7 +462,7 @@ footer .row {
     }
 
     .flex-viewport {
-        max-height: -o-calc(100vh - 75px); /* opera */
+        max-height: calc(100vh - 75px); /* opera */
         max-height: -webkit-calc(100vh - 75px); /* google, safari */
         max-height: -moz-calc(100vh - 75px); /* firefox */
     }
