@@ -8,6 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <script src="https://kit.fontawesome.com/e6b29d7617.js" crossorigin="anonymous"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("user_aNQy8jfqDYr7gXeKtQZ5z");
+            })();
+        </script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css"/>
         <link rel="stylesheet" href="assets/css/style.css" />
@@ -67,7 +75,7 @@
                     <div class="row">
                         <div class="col">    
                             <div class="center-form contactform greybackground">
-                                <form>
+                                <form onsubmit="return sendMail(this);">
                                     <h3 class="smallheading mt-2">First Name</h3>
                                     <input type="text" name="firstname" id="firstname" class="form-control" placeholder="First Name" required>
                                     <h3 class="smallheading mt-2">Last Name</h3>
@@ -115,6 +123,7 @@
                 </div>
             </div>
         </footer>
+        <script src="assets/js/email.js"></script>
         <!--Bootstrap JavaScript Files-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
