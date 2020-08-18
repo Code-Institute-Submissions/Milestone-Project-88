@@ -347,6 +347,39 @@ main {
     height: 600px;
 }
 
+/***********************************Travel Info Page***********************/
+
+.card-header {
+    background-color: rgba(120,161,187,0.25);
+    padding: 0;
+}
+
+.card {
+    width: 95%;
+    margin: auto;
+}
+
+.container-services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.btn-services {
+    margin-top: 0;
+    width: 100%;
+    border: 0px;
+    background-color: rgba(3, 94, 11, 0.9);
+    text-align: left;
+    padding: 20px;
+}
+
+.btn-services:hover {
+    background-color: #f05365;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
 /***********************************Contact Page**************************/
 
 .container-contact {

@@ -125,23 +125,51 @@
                                             <div class="card-header" id="headingTwo">
                                             <h5 class="mb-0">
                                                 <button class="btn btn-link btn-services collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                OuterWear
+                                                Clothing, Swimwear & Underwear
                                                 </button>
                                             </h5>
                                             </div>
                                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#cardholder">
                                                 <div class="card-body">
                                                 <!--text taken from World health organisation website https://www.who.int/news-room/fact-sheets/detail/musculoskeletal-conditions-->
-                                                    <p>This is perhaps the most important section on your packing list, besides underwear and socks. It is very important that your entire body remains dry during wet conditions, and this includes your legs and your feet. You want to make sure you have a water-proof jacket and pants, with decent breathability, so that your entire body remains dry in case of a light drizzle or under heavier rain. A good pair of waterproof or water-resistant hiking boots is also highly recommended. Please refer to the list below for details of the "outerwear" items we recommend you bring with you.</p>
+                                                    <p>Below is a list of the regular clothing items that you should bring to your Patagonia adventure. The list below should be good to last you for 8 or 9 days in Patagonia, although most of the places where you will be staying do offer laundry service. Remember to pack as light as you can, so that you can easily store your bags in your Jeep vehicles. A good, durable, medium-sized duffle bag is the ideal bag to carry your clothing and gear.</p>
                                                     <ul>
-                                                        <li>Light and warm Jacket or Fleece</li>
-                                                        <li>Wind-/water-resistant Soft-shell Jacket</li>
-                                                        <li>Rain Jacket or Parka</li>
-                                                        <li>Rain Pants</li>
-                                                        <li>Goretex-lined Boots or similar water-proof hiking boots.</li>
-                                                        <li>Gloves (medium thickness, waterproof preferred)</li>
-                                                        <li>Beanie and Baseball Cap or Hat</li>
-                                                        <li>Buff or scarf</li>
+                                                        <li>6 T-shirts</li>
+                                                        <li>2 synthetic-fiber polo shirts (for quick drying)</li>
+                                                        <li>2 short-sleeve button-down shirts</li>
+                                                        <li>8 pairs of underwear + 8 pairs of socks</li>
+                                                        <li>1 fleece sweater</li>
+                                                        <li>1 wool sweater</li>
+                                                        <li>2 to 3 pairs of hiking pants</li>
+                                                        <li>Synthetic-fiber cargo pants</li>
+                                                        <li>Synthetic-fiber/organic-cotton hiking pants</li>
+                                                        <li>1 pair of jeans</li>
+                                                        <li>1 pair of Dockers pants or slacks for the evenings</li>
+                                                        <li>1 synthetic-fiber light-weight thermal long-sleeve + pant</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link btn-services collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Gear
+                                                </button>
+                                            </h5>
+                                            </div>
+                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#cardholder">
+                                                <div class="card-body">
+                                                <!--text taken from World health organisation website https://www.who.int/news-room/fact-sheets/detail/musculoskeletal-conditions-->
+                                                    <p>Having good gear for your Patagonia adventure will allow you to go through the trails and treks with more comfort and ease. It is especially important that you bring a good technical day-pack that is waterproof, or that it comes with a waterproof cover. If your day pack is not waterproof, you can also store your items inside in a dry-sack, which will keep everything dry in case the entire pack gets wet.</p>
+                                                    <ul>
+                                                        <li>Technical Day Pack (with waterproof cover)</li>
+                                                        <li>Dry sack (Size: 13L or 20L)</li>
+                                                        <li>Trekking Poles (provided on our trips)</li>
+                                                        <li>Goretex or similar waterproof Gaiters (optional)</li>
+                                                        <li>32oz (1L) Nalgene water bottle (provided on our trips)</li>
+                                                        <li>Sunglasses</li>
+                                                        <li>Headlamp</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -177,9 +205,9 @@
         <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
         <!-- FlexSlider -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
-        <script type="text/javascript" src="assets/js/flexslider.js"></script>
+        <script src="assets/js/flexslider.js"></script>
         <!--Main Javascript File-->
-        <script type="text/javascript" src="assets/js/main.js"></script>
+        <script src="assets/js/main.js"></script>
         <!--Google Maps API-->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3ixlXSx8LZE5Hs95dw9Ba4dAalSK2JbY&libraries=&v=weekly"></script>
         <script>
@@ -199,16 +227,6 @@
                 
             addLoadEvent(weatherBalloon (-54.808474, -68.306925)); 
             addLoadEvent(restaurantList(-54.808474, -68.306925));
-        </script>
-        <script>
-        //Change Map Data based on user input
-        $(document).ready(function(){
-            $('#host').on('change', function() {
-            
-            if ( $('#host').val() == 'Restaurants' ) restaurantList(-54.808474, -68.306925);
-            else if ( $('#host').val() == 'Hotels' ) hotelList(-54.808474, -68.306925);
-            });
-        });
         </script>
     </body>
 </html>
