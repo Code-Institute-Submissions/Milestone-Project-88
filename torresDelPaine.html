@@ -74,12 +74,14 @@
                                 <h2 class="mediumheading">Welcome to Parque Nacional Torres del Paine</h2>
                                 <hr class="block-divider wide-block-divider">
                                 <div class="text-justify">
+                                    <!--Overview of the National Park-->
                                     <!--Content taken from Lonely Planet Guide https://www.lonelyplanet.com/chile/southern-patagonia/parque-nacional-torres-del-paine-->
                                     <p>Soaring almost vertically above the Patagonian steppe, the granite pillars of Torres del Paine (Towers of Paine) dominate the landscape of South America's finest national park. Part of Unesco's Biosphere Reserve system since 1978, this 1810-sq-km park is, however, much more than its one greatest hit. Its diversity of landscapes range from teal and azure lakes to emerald forests, roaring rivers and that one big, radiant blue glacier. Guanacos roam the vast open steppe, while Andean condors soar alongside looming peaks.</p>
                                     <p class="hiddenText">Forget roughing it. You can hike the whole 'W' while sleeping in beds, eating hot meals, taking showers and toasting your day with a pisco sour. Yet it isn't fully tamed. Weather can present four seasons in a day, with sudden rainstorms and knock-down gusts like a hearty Patagonian handshake. The park's wild popularity has been taxing on infrastructure, an issue now being addressed by a strict reservations system for overnighters.</p>
                                     <a href="javascript:void();" class="readmore-btn mb-3 text-center">Read More ▼</a>
                                 </div>
                             </div>
+                            <!--5-day weather forecast data-->
                             <div class="col-12 col-md-5 text-center">
                                 <div class=" greybackground p-1 pt-3">
                                     <h2 class="mediumheading">5-day Forecast</h2>
@@ -123,11 +125,13 @@
                     </div>
                 </div>
             </section>
+            <!--Map with Trip Advisor Data-->
             <section>
                 <div class="container mb-5">
                     <div class="col-12 mb-3 text-center">
                         <h2 class="mediumheading">Find Local Restaurants & Hotels</h2>
                         <hr class="block-divider wide-block-divider">
+                        <!--Dropdown options to select hotels or restaurants-->
                         <select id="host">
                             <option value="">Select Map View</option>
                             <option value="Restaurants">Restaurants</option>
@@ -142,7 +146,7 @@
         <footer class="container-fluid oceanbackground">
             <div class="container">
                 <div class="row justify-content-center">
-                    <!--Opening Hours-->
+                    <!--Social Media Links and Icons-->
                     <div class="col-12 col-md-4 footercontent">
                         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -182,7 +186,7 @@
                     } 
                 } 
                 }
-                
+            //Passes lat, long of park for weather and mapping info    
             addLoadEvent(weatherBalloon (-51.083400, -72.982678)); 
             addLoadEvent(restaurantList(-51.083400, -72.982678));
         </script>

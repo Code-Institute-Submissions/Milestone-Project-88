@@ -74,12 +74,14 @@
                                 <h2 class="mediumheading">Welcome to Parque Nacional Los Glaciares</h2>
                                 <hr class="block-divider wide-block-divider">
                                 <div class="text-justify">
+                                    <!--Overview of the Glaciar-->
                                     <!--Content taken from Lonely Planet Guide https://www.lonelyplanet.com/argentina/patagonia/parque-nacional-los-glaciares-south-->
                                     <p>Among the Earth's most dynamic and accessible ice fields, Glaciar Perito Moreno is the stunning centerpiece of the southern sector of Parque Nacional Los Glaciares. It’s 30km long, 5km wide and 60m high, but what makes it exceptional in the world of ice is its constant advance – it creeps forward up to 2m per day, causing building-sized icebergs to calve from its face. Watching the glacier is a sedentary park experience that manages to be thrilling.</p>
                                     <p class="hiddenText">The glacier formed as a low gap in the Andes allowed moisture-laden Pacific storms to drop their loads east of the divide, where they accumulate as snow. Over millennia, under tremendous weight, this snow recrystallized into ice and flowed slowly eastward. The 1600-sq-km trough of Lago Argentino, the country’s largest body of water, shows that glaciers were once far more extensive here. While most of the world’s glaciers are receding, Glaciar Perito Moreno is considered ‘stable.’</p>
                                     <a href="javascript:void();" class="readmore-btn mb-3 text-center">Read More ▼</a>
                                 </div>
                             </div>
+                            <!--5-day weather forecast data-->
                             <div class="col-12 col-md-5 text-center">
                                 <div class=" greybackground p-1 pt-3">
                                     <h2 class="mediumheading">5-day Forecast</h2>
@@ -123,11 +125,13 @@
                     </div>
                 </div>
             </section>
+            <!--Map with Trip Advisor Data-->
             <section>
                 <div class="container mb-5">
                     <div class="col-12 mb-3 text-center">
                         <h2 class="mediumheading">Find Local Restaurants & Hotels</h2>
                         <hr class="block-divider wide-block-divider">
+                        <!--Dropdown options to select hotels or restaurants-->
                         <select id="host">
                             <option value="">Select Map View</option>
                             <option value="Restaurants">Restaurants</option>
@@ -142,7 +146,7 @@
         <footer class="container-fluid oceanbackground">
             <div class="container">
                 <div class="row justify-content-center">
-                    <!--Opening Hours-->
+                    <!--Social Media Links and Icons-->
                     <div class="col-12 col-md-4 footercontent">
                         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -182,7 +186,7 @@
                     } 
                 } 
                 }
-                
+            //Passes lat, long of Glaciar for weather and mapping info   
             addLoadEvent(weatherBalloon (-50.468405, -73.033524)); 
             addLoadEvent(restaurantList(-50.468405, -73.033524));
         </script>

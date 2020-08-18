@@ -54,6 +54,7 @@
         </header>
         <!--Main Body of Webpage-->
         <main>
+            <!--How to Get there info-->
             <section>
                 <div class="container-fluid">
                     <div class="container">
@@ -71,6 +72,7 @@
                                 <p class="hiddenText">Finally, there are plenty of airports in Patagonia in strategic locations, meaning you can generally fly directly into – or a few hours’ drive from – your main destination. Flights on the chilean side tend to be cheaper but check from both sides. We recommend <a href="https://www.skyscanner.ie/" target="_blank">SkyScanner</a> for extensive flight comparison.</p>
                                 <a href="javascript:void();" class="readmore-btn mb-3 text-center">Read More ▼</a>
                             </div>
+                            <!--Sky Scanner Api Data-->
                             <div class="col-12 col-md-6 text-center mt-3">
                                 <div class=" greybackground p-1 pt-3">
                                     <h2 class="mediumheading">Buenos Aires to El Calafate Flights</h2>
@@ -115,6 +117,7 @@
                     </div>
                 </div>
             </section>
+            <!--What to pack collapsable section-->
             <section>
                 <div class="container-fluid">
                     <div class="container">
@@ -217,6 +220,7 @@
                     </div>
                 </div>     
             </section>
+            <!--When to go content with open weather api data-->
             <section>
                 <div class="container-fluid">
                     <div class="container">
@@ -277,7 +281,7 @@
         <footer class="container-fluid oceanbackground">
             <div class="container">
                 <div class="row justify-content-center">
-                    <!--Opening Hours-->
+                    <!--Social Media Links and Icons-->
                     <div class="col-12 col-md-4 footercontent">
                         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -303,6 +307,8 @@
         <!--Google Maps API-->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3ixlXSx8LZE5Hs95dw9Ba4dAalSK2JbY&libraries=&v=weekly"></script>
         <script>
+        //call onload javascript functions
+        //Code adpated from https://www.htmlgoodies.com/beyond/javascript/article.php/3724571/using-multiple-javascript-onload-functions.htm
             function addLoadEvent(func) { 
                 var oldonload = window.onload; 
                 if (typeof window.onload != 'function') { 
@@ -318,6 +324,7 @@
                 }
                 
             addLoadEvent(skyScanner ("BUEA-sky", "FTEA-sky"));
+            addLoadEvent(weatherBalloon (-50.339436, -72.286471)); 
         </script>
     </body>
 </html>

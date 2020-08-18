@@ -74,12 +74,14 @@
                                 <h2 class="mediumheading">Welcome to the Argentinian Capital of Trekking</h2>
                                 <hr class="block-divider wide-block-divider">
                                 <div class="text-justify">
+                                    <!--Overview of the town-->
                                     <!--Content taken from Lonely Planet Guide https://www.lonelyplanet.com/argentina/patagonia/el-chalten-->
                                     <p>This colorful village overlooks the stunning northern sector of Parque Nacional Los Glaciares. Every summer thousands of trekkers explore the world-class trails that start right here. Founded in 1985, in a rush to beat Chile to the land claim, El Chaltén is still a frontier town, albeit an offbeat one, featuring constant construction, hippie values and packs of roaming dogs. Every year more mainstream tourists come to see what the fuss is about, but in winter (May–September) most hotels and services board up and transportation links are few.</p>
                                     <p class="hiddenText">El Chaltén is named for Cerro Fitz Roy’s Tehuelche name, meaning ‘peak of fire’ or ‘smoking mountain’ – an apt description of the cloud-enshrouded summit. Perito Moreno and Carlos Moyano later named it after the Beagle’s Captain FitzRoy, who navigated Darwin’s expedition up the Río Santa Cruz in 1834, coming within 50km of the cordillera. Visit <a href="https://elchalten.com/" target="_blank">www.elchalten.com</a> for a good overview of the town.</p>
                                     <a href="javascript:void();" class="readmore-btn mb-3 text-center">Read More ▼</a>
                                 </div>
                             </div>
+                            <!--5-day weather forecast data-->
                             <div class="col-12 col-md-5 text-center">
                                 <div class=" greybackground p-1 pt-3">
                                     <h2 class="mediumheading">5-day Forecast</h2>
@@ -123,11 +125,13 @@
                     </div>
                 </div>
             </section>
+            <!--Map with Trip Advisor Data-->
             <section>
                 <div class="container mb-5">
                     <div class="col-12 mb-3 text-center">
                         <h2 class="mediumheading">Find Local Restaurants & Hotels</h2>
                         <hr class="block-divider wide-block-divider">
+                        <!--Dropdown options to select hotels or restaurants-->
                         <select id="host">
                             <option value="">Select Map View</option>
                             <option value="Restaurants">Restaurants</option>
@@ -143,7 +147,7 @@
         <footer class="container-fluid oceanbackground">
             <div class="container">
                 <div class="row justify-content-center">
-                    <!--Opening Hours-->
+                    <!--Social Media Links and Icons-->
                     <div class="col-12 col-md-4 footercontent">
                         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -183,12 +187,12 @@
                     } 
                 } 
                 }
-                
+            //Passes lat, long of El Chalten for weather and mapping info
             addLoadEvent(weatherBalloon (-49.330494, -72.885693)); 
             addLoadEvent(restaurantList(-49.330494, -72.885693));
         </script>
         <script>
-        //Change Map Data based on user input
+        //Change Map Data based on user input in dropdown menu
         $(document).ready(function(){
             $('#host').on('change', function() {
             

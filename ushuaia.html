@@ -74,12 +74,14 @@
                                 <h2 class="mediumheading">Welcome to the End of the World</h2>
                                 <hr class="block-divider wide-block-divider">
                                 <div class="text-justify">
+                                    <!--Overview of the town-->
                                     <!--Content taken from Lonely Planet Guide https://www.lonelyplanet.com/argentina/tierra-del-fuego/ushuaia-->
                                     <p>A busy port and adventure hub, Ushuaia is a sliver of steep streets and jumbled buildings below the snowcapped Martial Range. Here the Andes meets the famed Beagle Channel in a sharp skid, making way for the city before reaching a sea of lapping currents.</p>
                                     <p class="hiddenText">Ushuaia takes full advantage of its end-of-the-world status, and an increasing number of Antarctica-bound vessels call into its port. The town's mercantile hustle knows no irony: there's a souvenir shop named for Jimmy Button (a Fuegian native taken for show in England) and the ski center is named for the destructive invasive castor (beaver). That said, with a pint of the world’s southernmost microbrew in hand, you can happily plot the outdoor options: hiking, sailing, skiing, kayaking and even scuba diving. Tierra del Fuego’s comparatively high wages draw Argentines from all over, and some locals lament the lack of urban planning and loss of small-town culture.</p>
                                     <a href="javascript:void();" class="readmore-btn mb-3 text-center">Read More ▼</a>
                                 </div>
                             </div>
+                            <!--5-day weather forecast data-->
                             <div class="col-12 col-md-5 text-center">
                                 <div class=" greybackground p-1 pt-3">
                                     <h2 class="mediumheading">5-day Forecast</h2>
@@ -123,11 +125,13 @@
                     </div>
                 </div>
             </section>
+            <!--Map with Trip Advisor Data-->
             <section>
                 <div class="container mb-5">
                     <div class="col-12 mb-3 text-center">
                         <h2 class="mediumheading">Find Local Restaurants & Hotels</h2>
                         <hr class="block-divider wide-block-divider">
+                        <!--Dropdown options to select hotels or restaurants-->
                         <select id="host">
                             <option value="">Select Map View</option>
                             <option value="Restaurants">Restaurants</option>
@@ -142,7 +146,7 @@
         <footer class="container-fluid oceanbackground">
             <div class="container">
                 <div class="row justify-content-center">
-                    <!--Opening Hours-->
+                    <!--Social Media Links and Icons-->
                     <div class="col-12 col-md-4 footercontent">
                         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -182,7 +186,7 @@
                     } 
                 } 
                 }
-                
+            //Passes lat, long of Ushuaia for weather and mapping info    
             addLoadEvent(weatherBalloon (-54.808474, -68.306925)); 
             addLoadEvent(restaurantList(-54.808474, -68.306925));
         </script>
