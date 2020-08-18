@@ -71,8 +71,45 @@
                                 <p class="hiddenText">Finally, there are plenty of airports in Patagonia in strategic locations, meaning you can generally fly directly into – or a few hours’ drive from – your main destination. Flights on the chilean side tend to be cheaper but check from both sides. We recommend <a href="https://www.skyscanner.ie/" target="_blank">SkyScanner</a> for extensive flight comparison.</p>
                                 <a href="javascript:void();" class="readmore-btn mb-3 text-center">Read More ▼</a>
                             </div>
-                            <div class="col-12 col-md-6">
-                                
+                            <div class="col-12 col-md-6 text-center mt-3">
+                                <div class=" greybackground p-1 pt-3">
+                                    <h2 class="mediumheading">Buenos Aires to El Calafate Flights</h2>
+                                    <div class="flightInfo">
+                                        <span>Date</span>
+                                        <span>Min. price</span>
+                                        <span>Airline</span>
+                                        <hr class="block-divider wide-block-divider mb-0 mt-0">
+                                    </div>
+                                    <div class="flightInfo">
+                                        <span id="date__0">Sun, 16 Aug</span>
+                                        <span id="price_0">100</span>
+                                        <span id="carrier_0">Cloudy</span>
+                                        <hr class="block-divider wide-block-divider mb-0 mt-0">
+                                    </div>
+                                    <div class="flightInfo">
+                                        <span id="date__1">Sun, 16 Aug</span>
+                                        <span id="price_1">3°</span>
+                                        <span id="carrier_1">Cloudy</span>
+                                        <hr class="block-divider wide-block-divider mb-0 mt-0">
+                                    </div>
+                                    <div class="flightInfo">
+                                        <span id="date__2">Sun, 16 Aug</span>
+                                        <span id="price_2">3°</span>
+                                        <span id="carrier_2">Cloudy</span>
+                                        <hr class="block-divider wide-block-divider mb-0 mt-0">
+                                    </div>
+                                    <div class="flightInfo">
+                                        <span id="date__3">Sun, 16 Aug</span>
+                                        <span id="price_3">3°</span>
+                                        <span id="carrier_3">Cloudy</span>
+                                        <hr class="block-divider wide-block-divider mb-0 mt-0">
+                                    </div>
+                                    <div class="flightInfo">
+                                        <span id="date__4">Sun, 16 Aug</span>
+                                        <span id="price_4">3°</span>
+                                        <span id="carrier_4">Cloudy</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -262,6 +299,7 @@
         <script src="assets/js/flexslider.js"></script>
         <!--Main Javascript File-->
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/skyScanner.js"></script>
         <!--Google Maps API-->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3ixlXSx8LZE5Hs95dw9Ba4dAalSK2JbY&libraries=&v=weekly"></script>
         <script>
@@ -279,7 +317,7 @@
                 } 
                 }
                 
-            addLoadEvent(weatherBalloon (-50.337925, -72.264158));
+            addLoadEvent(skyScanner ("BUEA-sky", "FTEA-sky"));
         </script>
     </body>
 </html>

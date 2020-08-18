@@ -380,6 +380,17 @@ main {
     text-decoration: none;
 }
 
+.flightInfo {
+    text-align: center;
+    padding: 5px;
+}
+
+.flightInfo span {
+    width: 25%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
 /***********************************Contact Page**************************/
 
 .container-contact {
