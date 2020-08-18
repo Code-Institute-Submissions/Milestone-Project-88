@@ -12,10 +12,10 @@ $(".showcard").mouseleave(function(){
 $(".readmore-btn").on('click', function (){
     $(this).parent().toggleClass("showContent");
     //Shorthand if Statement
-    var replaceText = $(this).parent().hasClass("showContent") ? "Read Less ▲" : "Read More ▼"
+    var replaceText = $(this).parent().hasClass("showContent") ? "Read Less ▲" : "Read More ▼";
     $(this).text(replaceText);
 
-})
+});
 
 //OpenWeatherMap API Connection
 
@@ -24,7 +24,7 @@ function weatherBalloon( lat, lon ) {
     var key = '1ff96bbb948a7c7b5371e9abe2d4b304';
     var url = 'https://api.openweathermap.org/data/2.5/onecall?lat='+ lat +'&lon='+ lon +'&exclude=minutely,hourly&appid='+ key;
     fetch(url)  
-    .then(function(resp) { return resp.json() }) // Convert data to json
+    .then(function(resp) { return resp.json(); }) // Convert data to json
     .then(function(data) {
         drawWeather(data); // Call drawWeather
 	})
@@ -37,7 +37,6 @@ function drawWeather( d ) {
     var i;
     for (i = 0; i < 5; i++){
         var celcius = Math.round(parseFloat(d.daily[i].temp.day)-273.15);
-        var fahrenheit = Math.round(((parseFloat(d.daily[i].temp.day)-273.15)*1.8)+32);
         var unixTimestamp = d.daily[i].dt;
         var milliseconds = unixTimestamp * 1000;
         var dateObject = new Date(milliseconds);
@@ -64,10 +63,10 @@ function restaurantList (lat, lon) {
 	}
     })
 
-    .then(function(resp) { return resp.json() }) // Convert data to json
+    .then(function(resp) { return resp.json(); }) // Convert data to json
     .then(function(data) {
         console.log(data);
-        var restaurantIcon = "http://maps.google.com/mapfiles/kml/pal2/icon35.png"
+        var restaurantIcon = "http://maps.google.com/mapfiles/kml/pal2/icon35.png";
         mapMarkers (data, restaurantIcon);
 	})
     .catch(err => {
@@ -85,10 +84,10 @@ function hotelList (lat, lon) {
 	}
     })
 
-    .then(function(resp) { return resp.json() }) // Convert data to json
+    .then(function(resp) { return resp.json(); }) // Convert data to json
     .then(function(data) {
         console.log(data);
-        var hotelIcon = "http://maps.google.com/mapfiles/kml/pal2/icon20.png"
+        var hotelIcon = "http://maps.google.com/mapfiles/kml/pal2/icon20.png";
         mapMarkers (data, hotelIcon);
 	})
     .catch(err => {
@@ -99,7 +98,6 @@ function hotelList (lat, lon) {
 //Create Array of Markers with Data
 function mapMarkers (d, Icon) {  
     var Markers = [];
-    var i;
     for (var i=0; i<d.data.length; i++) {
         if ((typeof d.data[i].name !== "undefined")&&(typeof d.data[i].latitude !== "undefined")){          
             Markers.push({
@@ -109,10 +107,9 @@ function mapMarkers (d, Icon) {
             stars: d.data[i].rating,
             description: d.data[i].description,
             url: d.data[i].web_url,
-            })  
+            });  
         }
     }
-    console.log(Markers)
     initMap(Markers, Icon);
 }
 
@@ -138,8 +135,7 @@ function initMap(markers, Icon) {
     
     //Create and open InfoWindow.
     var infoWindow = new google.maps.InfoWindow();
- 
-    for (var i = 0; i < markers.length; i++) {
+    for (i = 0; i < markers.length; i++) {
         var data = markers[i];
         var myLatlng = new google.maps.LatLng(data.lat, data.long);
         var marker = new google.maps.Marker({
