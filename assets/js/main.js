@@ -163,7 +163,76 @@ function initMap(markers, Icon) {
     }
 }
 
+//Form Validation
 
+//Check inputs are provided, names contain only letters and email address is valid, and minimum lengths of input are met then calls emailjs send function.
+//Code adapted from here https://www.tutorialspoint.com/javascript/javascript_form_validations.htm
+function validate() {
+    var emailID = document.myForm.email.value;
+    atpos = emailID.indexOf("@");
+    dotpos = emailID.lastIndexOf(".");
+    var firstname = document.myForm.firstname.value;
+    var lastname = document.myForm.lastname.value;
+    var query = document.myForm.query.value;
+         
+    if (atpos < 1 || ( dotpos - atpos < 2 )) {
+        alert("Please enter correct email ID")
+        document.myForm.Email.focus() ;
+        return false;
+    }
+
+    if( firstname == "") {
+        alert( "Please provide your first name!" );
+        document.myForm.firstname.focus() ;
+        return false;
+    }
+
+    if( firstname.length <= 1) {
+        alert( "Sorry that first name is too short, please provide your first name!" );
+        document.myForm.firstname.focus() ;
+        return false;
+    }
+
+    if (!/[^a-zA-Z]/.test(firstname) == false) {
+        alert( "Sorry, numbers are not accepted in Names!" );
+        document.myForm.firstname.focus() ;
+        return false;
+
+    }
+
+    if( lastname == "" ) {
+        alert( "Please provide your surname!" );
+        document.myForm.lastname.focus() ;
+        return false;
+    }
+
+    if( lastname.length <= 1) {
+        alert( "Sorry that last name is too short, please provide your last name!" );
+        document.myForm.lastname.focus() ;
+        return false;
+    }
+
+    if (!/[^a-zA-Z]/.test(lastname) == false) {
+        alert( "Sorry, numbers are not accepted in Names!" );
+        document.myForm.lastname.focus() ;
+        return false;
+
+    }
+
+    if( query == "" ) {
+        alert( "Please add a message!" );
+        document.myForm.query.focus() ;
+        return false;
+    }
+
+    if( query.length <= 5 ) {
+        alert( "Please add a longer message!" );
+        document.myForm.query.focus() ;
+        return false;
+    }
+    
+    return( sendMail(this) );
+}
 
 
 
