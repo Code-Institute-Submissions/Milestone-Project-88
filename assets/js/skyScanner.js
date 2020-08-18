@@ -1,3 +1,8 @@
+//SkyScanner Api Connection
+
+//Based on RapidAPI documentation for Sky Scanner https://rapidapi.com/skyscanner/api/skyscanner-flight-search
+
+//Fetchs data between two city id from the Skyscanner api and calls the drawFlights function to parse data
 function skyScanner (origin, destination) {
     fetch("https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/EUR/en-US/"+ origin + "/" + destination + "/anytime", {
         "method": "GET",
@@ -17,8 +22,10 @@ function skyScanner (origin, destination) {
     });
 };
 
+//Updates html on Travel Info page to show results for the first 5 flights retrieved by the Scanner API
 function drawFlights( d ) {
     var i;
+    //Loops through each quote and updates relevent HTML elements. 
     for (i = 0; i < 5; i++){
         var fullDate = d.Quotes[i].OutboundLeg.DepartureDate;
         var shortDate = fullDate.substring(0, 10);
