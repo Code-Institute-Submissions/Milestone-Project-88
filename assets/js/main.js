@@ -21,7 +21,7 @@ $(".readmore-btn").on('click', function (){
 
 //Code adapted from Tutorial @ https://bithacker.dev/fetch-weather-openweathermap-api-javascript & https://openweathermap.org/api/one-call-api#list
 function weatherBalloon( lat, lon ) {
-    var key = '1ff96bbb948a7c7b5371e9abe2d4b304';
+    var key = '2f9c7bcaede88b0f0b960054ae50364a';
     var url = 'https://api.openweathermap.org/data/2.5/onecall?lat='+ lat +'&lon='+ lon +'&exclude=minutely,hourly&appid='+ key;
     fetch(url)  
     .then(function(resp) { return resp.json(); }) // Convert data to json
