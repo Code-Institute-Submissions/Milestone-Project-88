@@ -38,6 +38,10 @@ a:hover {
     background-color: #ffffff;
 }
 
+.pinkbackground {
+    background-color: #f05365;
+}
+
 /******************************General Heading and Text Styles*******************************/
 
 body {
@@ -73,9 +77,19 @@ body {
 /******************************Buttons******************************/
 
 .btn:hover {
-    border-color: rgb(3, 94, 11);
-    background-color: #03A89E;
-    color:#fafafa;
+    background-color: #f05365;
+    color: #fafafa;
+}
+
+.btn {
+    background-color: rgb(3, 94, 11);  
+    font-family: "Roboto", sans-serif;
+    color: #fafafa;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 5px 15px;
 }
 
 .readmore-btn {
@@ -126,7 +140,6 @@ header {
     width: 100vw;
     display: flex;
 }
-
 
 main {
     margin-top: 110px;
@@ -229,7 +242,6 @@ main {
     color: #ffffff;
     font-size: 8.0rem;
 }
-
 
 .overlayIcon{
     font-size: 5.0rem;
@@ -334,6 +346,19 @@ main {
 #map {
     height: 600px;
 }
+
+/***********************************Contact Page**************************/
+
+.container-contact {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.contactform {
+    padding: 20px;
+    border-radius: 10px;
+}
+
 /***********************************FOOTER********************************/
 
 footer .row {
@@ -475,7 +500,6 @@ footer .row {
         max-width: 60px;
         padding: 5px;
     }
-
 
     .navbar-toggler{
         padding-left: 6px;
