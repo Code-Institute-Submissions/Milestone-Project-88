@@ -18,3 +18,4 @@ function sendMail(contactform) {
     );
     return false;  // To block from loading a new page
 }
+
