@@ -80,7 +80,7 @@ Within the home page the following features are included (as well as the above):
 - Overview of best way to travel to Patagonia.
 - Data from skyscanner api with dates, prices and airline for next flights to Patagonia.
 - Overview of what to pack with collapsable menu of different categories.
-- Overview of when to go (weather is a very important consideration when visiting Patagonia!)/ 
+- Overview of when to go (weather is a very important consideration when visiting Patagonia!). 
 - Overview of 5 day weather forecast for el Calafate, one of the main towns on the Argentinian side. 
 
 #### contact.html
@@ -111,9 +111,9 @@ Within the home page the following features are included (as well as the above):
 - [popper.js](https://popper.js.org/) - Used in some of the clickable elements such as collapsable 'hamburger' nav bar.
 - [flexslider](http://flexslider.woothemes.com/) -  Used for hero image slider on home page.
 - [Email](https://www.emailjs.com/) - Used to send email form.
-- [RapidApi](https://rapidapi.com/) - Used to gain access to [TripAdvisorAPI](https://rapidapi.com/apidojo/api/tripadvisor1), [SkyScannerAPI](https://rapidapi.com/skyscanner/api/skyscanner-flight-search)
-- [OpenWeatherMapAPI](https://openweathermap.org/api) -  Used to get data for 5-day weather forecasts.
-- [GoogleMapJavascriptApi](https://developers.google.com/maps/documentation/javascript/overview) - Used to render google maps to display Trip Advisor data. 
+- [RapidApi](https://rapidapi.com/) - Used to gain access to [Trip Advisor API](https://rapidapi.com/apidojo/api/tripadvisor1), [SkyScanner API](https://rapidapi.com/skyscanner/api/skyscanner-flight-search)
+- [Open Weather Map API](https://openweathermap.org/api) -  Used to get data for 5-day weather forecasts.
+- [Google Map Javascript Api](https://developers.google.com/maps/documentation/javascript/overview) - Used to render google maps to display Trip Advisor data. 
 - [Font Awesome](https://fontawesome.com/) - Font Awesome was used to add icons to hero image and social media icons.
 - [Google Fonts](https://fonts.google.com/) - Google Fonts was used to import 'Roboto' and 'Amatic SC' fonts in the style.css stylesheet.
 - [Git](https://git-scm.com/) - Git was used to allow for tracking of any changes in the code and for the version control.
@@ -123,7 +123,7 @@ Within the home page the following features are included (as well as the above):
 - [W3C Markup Validation](https://validator.w3.org/) used to validate HTML.
 - [W3C CSS validation](https://jigsaw.w3.org/css-validator/) used to validate CSS.
 - [Tiny jpg](https://tinyjpg.com/) - Used to reduce image size.
-- [ResizeImage](https://resizeimage.net/) -  Used to Further reduce images.
+- [Resize Image](https://resizeimage.net/) -  Used to Further reduce images.
 
 ## Testing
 
