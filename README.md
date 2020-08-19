@@ -66,7 +66,7 @@ Within the home page the following features are included (as well as the above):
 
 #### Attractions
 
-##### torresDelPaine.html, ##### elChalten.html ##### ushuaia.html, ##### peritoMoreno.html
+##### torresDelPaine.html, elChalten.html, ushuaia.html, peritoMoreno.html
 
 - Hero image of scenery at attractions.
 - Overview of attraction with a read more option. 
