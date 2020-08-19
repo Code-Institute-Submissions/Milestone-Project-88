@@ -359,21 +359,16 @@ main {
     margin: auto;
 }
 
-.container-services {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.btn-services {
+.btn-packing {
     margin-top: 0;
     width: 100%;
     border: 0px;
-    background-color: rgba(3, 94, 11, 0.9);
+    background-color: rgba(0, 34, 96, 0.9);
     text-align: left;
     padding: 20px;
 }
 
-.btn-services:hover {
+.btn-packing:hover {
     background-color: #f05365;
     font-weight: 700;
     color: #ffffff;
