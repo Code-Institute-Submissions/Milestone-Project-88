@@ -114,15 +114,16 @@ Within the home page the following features are included (as well as the above):
 - [RapidApi](https://rapidapi.com/) - Used to gain access to [TripAdvisorAPI](https://rapidapi.com/apidojo/api/tripadvisor1), [SkyScannerAPI](https://rapidapi.com/skyscanner/api/skyscanner-flight-search)
 - [OpenWeatherMapAPI](https://openweathermap.org/api) -  Used to get data for 5-day weather forecasts.
 - [GoogleMapJavascriptApi](https://developers.google.com/maps/documentation/javascript/overview) - Used to render google maps to display Trip Advisor data. 
-- [Font Awesome](https://fontawesome.com/) - Font Awesome was used to add social icons throughout the site and improve overall design and legibility.
-- [Google Fonts](https://fonts.google.com/) - Google Fonts was used to import 'Roboto' and 'Exo' fonts in the style.css stylesheet.
+- [Font Awesome](https://fontawesome.com/) - Font Awesome was used to add icons to hero image and social media icons.
+- [Google Fonts](https://fonts.google.com/) - Google Fonts was used to import 'Roboto' and 'Amatic SC' fonts in the style.css stylesheet.
 - [Git](https://git-scm.com/) - Git was used to allow for tracking of any changes in the code and for the version control.
 - [GitPod](https://www.gitpod.io/) - GitPod, conected to GitHub, hosted the coding space and allowed the projected to be commited to the Github repository.
 - [Github](https://github.com/) - GitHub is used to host the repository and publish the live website by using Git Pages.
 - [Google Chrome developer tools](https://developers.google.com/web/tools/chrome-devtools) for testing and troubleshooting.
 - [W3C Markup Validation](https://validator.w3.org/) used to validate HTML.
 - [W3C CSS validation](https://jigsaw.w3.org/css-validator/) used to validate CSS.
-- [Tiny jpg](https://tinyjpg.com/) used to reduce hero image size.
+- [Tiny jpg](https://tinyjpg.com/) - Used to reduce image size.
+- [ResizeImage](https://resizeimage.net/) -  Used to Further reduce images.
 
 ## Testing
 
@@ -148,9 +149,9 @@ The live website, hosted on gitpages, has been opened and tested on multiple bro
 * Firefox
 * Opera
 
-Overall the website worked well and appeared as intended on different sizes across different browsers with the exception of IE where a number of elements were unexpectedly displaced. Firefox and IE were also slower than other browsers, I reduced the image sizes to improve this. Below is a summary of the browser testing. 
+Overall the website worked well and appeared as intended on different sizes across different browsers. However, there were a number of javascript functions which were not supported on IE. 
 
-<img src="./assets/images/browerstest.jpg" width="100%" >
+<img src="./assets/images/readme/browserTesting.jpg" width="100%" >
 
 #### Responsiveness
 
@@ -167,16 +168,14 @@ The website has been tested across multiple screen sizes using [Google Chrome de
 - iPad
 - iPad Pro
 
-The screen was also adjusted through various sizes and breakpoints with the responsive option in developer tools. The website was also opened and checked on Huawei P10 and Samsung A20 mobile devices as well as Dell xps 15 and Apple Macbook. The responsiveness was also tested on the browsers outlined above with no noted issues. Overall the website appeared as intended across each screen type. There were some intial errors particularly on iPhone5 screen size (320px width) with overflows of titles and off center imagery. However, an additional media query was added to address this and all screens less than 400px approximately. 
+The screen was also adjusted through various sizes and breakpoints with the responsive option in developer tools. The website was also opened and checked on Samsung A20 & iPhone SE mobile devices as well as Dell xps 15, Lenovo Think Pad and Apple Macbook. The responsiveness was also tested on the browsers outlined above with no noted issues. Overall the website appeared as intended across each screen type. There were some intial errors particularly on iPhone5 screen size (320px width) with overflows of titles. However, an additional media query was added to address this and all screens less than 400px approximately. 
 
 ### User experience & Usability
 
-Multiple users of different ages (friends, family members, CI peer review group) were asked to open the devices on mobiles and laptop to sense check the layout, readability and usability of the site. Comments back included the below:
+Multiple users of different ages (friends, family members) were asked to open the devices on mobiles and laptop to sense check the layout, readability and usability of the site. Comments back included the below:
 
-- One user found initial colour chosen for button hover difficult to read (this was changed);
-- One user expected 'Call Us' to provide phone number instead of leading to contact page (this was updated to include pop up with phone number);
-- One user didn't like initial border circles (too PowerPoint 2003!). I agreed in reflection and amended image styling. 
-- One user expected some event when hitting send message button on forms, even if forms weren't techically required to work. I addressed this by providing the popup boxes. 
+- Request to change heading/text sizes slightly;
+- Update to some images.
 
 A thorough review was also done across all pages and links to ensure they were mapped correctly and no unexpected errors were thrown up. 
 
@@ -186,8 +185,7 @@ A thorough review was also done across all pages and links to ensure they were m
 
 ### Performance Testing
 
-Chrome developer tools was used to undertake a performance audit of each page. Generally the pages performed well with the main issues relating to loading time of external scripts and stylesheets from Bootstrap & Font Awesome. The loading of Google Maps on the 'Find Us' page had the biggest impact on load times. Other issues which were addressed were images sizes which were reduced using Tiny jpg and the addition of meta description to the head for each page. 
-
+Chrome developer tools was used to undertake a performance audit of each page. Initially there were significant performance issues due to the size of the image files. There were reduced and resized using [Tiny jpg](https://tinyjpg.com/) and [ResizeImage](https://resizeimage.net/). This significantly improved the load time of the pages. 
 ### Known issues
 
 I've fixed the header to the top of the screen as I think this makes website easier to navigate. I dropped the content below this so there is no content blocked. However, when navigating to one of the in page anchors (Personal Training/Yoga and Pilates classes) the header blocks the heading. I've tried various fixes for this with no success. I've still left the navbar fixed as I believe the benefit of it outweighs the minor error. 
