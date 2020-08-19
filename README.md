@@ -46,57 +46,55 @@ All wireframes created for the project can be found [here](https://github.com/al
 
 Every page shares the same header, navbar and footer with the active tab changed to reflect the current page. Below outlines the features included in the header and navbar.
 
-- Company logo and name linking back to home page;
-- Two call to action 'buttons' linking to contact and booking form (only visible on larger devices as clutter smaller devices);
+- webpage logo and name linking back to home page;
 - Active page highlighted in navbar;
-- Dropdown menu for subsection of services page;
+- Dropdown menu for subsection of attractions and travel info page;
 - Accent colour on hovering over nav items;
 - Collapsed hamburger navbar on smaller devices. 
 
 Within the footer the following is included.
 
-- Opening hours;
-- Contact details with links to the contact page;
-- 'Find us' info with address and google map image linking to the Find Us webpage and google maps (in another in window). 
+- Social media icons and links. 
 
 #### index.html
 
 Within the home page the following features are included (as well as the above):
 
-- Hero image;
-- Callout with important information related to recent reopening;
-- 'Call Us' button which tiggers a modal call out with phone number;
-- Three subsections providing brief overview of 3 of the other pages with links to read more.
+- Rotating Hero image created with [flexslider](http://flexslider.woothemes.com/);
+- 2 showcards with a read more option and a link to attractions page. Showcards change colour on hover;
+- Embedded youtube video of Expedia Patagonian Travel guide, this plays onload but on mute. 
 
-#### about.html
+#### Attractions
 
-- Brief history of the clinic history with link to services page;
-- Bio of the head phyio with circular image;
-- Bio of personal trainer with circular image.
+##### torresDelPaine.html, ##### elChalten.html ##### ushuaia.html, ##### peritoMoreno.html
 
-#### services.html
+- Hero image of scenery at attractions.
+- Overview of attraction with a read more option. 
+- 5 day weather forecast at attractions using data from the openweathermap api.
+- Google map api of the local area around attraction with nearby restaurants added onload. Locations of  and data for restaurants and hotels retrieved using tripadvisor api.
+- Dropdown menu to update map to add restaurants or hotels.
+- Popup window on map markers which provide the name, trip advisor rating and link to trip advisor web page for restaurant or hotel. 
 
-- Overview of physio treatments offered for a range of conditions;
-- Conditions presented in a collapsable text boxes as not to overwhelm user with unwanted text;
-- Overview of personal training and yoga services with appropriate images.
+#### travelInfo.html
+
+- Overview of best way to travel to Patagonia.
+- Data from skyscanner api with dates, prices and airline for next flights to Patagonia.
+- Overview of what to pack with collapsable menu of different categories.
+- Overview of when to go (weather is a very important consideration when visiting Patagonia!)/ 
+- Overview of 5 day weather forecast for el Calafate, one of the main towns on the Argentinian side. 
 
 #### contact.html
 
-- form to send query with required fields;
-- modal popup when submitted to with 'message sent' alert;
-- form for booking app with date picker and time choices and another popup after submitting.
-
-#### location.html
-
-- directions to clinic;
-- coloured card with address (only visible on larger devices to simplify UX on mobile);
-- interactive google maps api with marker on clinic location. 
+- form to send email query with required fields.
+- alerts on sending or if field not correctly filled out.
+- No numbers or words less than 2 letters in name, email validation and minimum of 5 letter in message. 
 
 ### Future Features
 
-- 'Call us' button on home page hero image should link to actual call function on mobile devices;
--  Forms should connect to email;
--  Booking form is currently for show only with unconstrainted dates and random times shown this could be connected to or replaced by an online booking system in the future.
+- I would like to add a overview of monthly weather for the year in the when to go section but this was only available with the paid version of the open weather api.
+- Ability to search flight between any two locations live on the website. 
+- Additional attractions. 
+- Check hotel availability on maps.
 
 ## Technologies Used
 
@@ -104,14 +102,18 @@ Within the home page the following features are included (as well as the above):
 
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 * [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-
-A small amount of [JavaScript](https://www.javascript.com/) was used to implement Google Maps Api on location page. This was copied from Google developer tools [tutorial](https://developers.google.com/maps/documentation/javascript/adding-a-google-map).
+* [JavaScript](https://www.javascript.com/) 
 
 ### Frameworks, Libraries and Programs Used
 
 - [Bootstrap v4.5.0](https://getbootstrap.com/) - Used for the responsove layout as well as custom components such as forms, modal popups, navigation bar, footer, cards and collapsable element.
 - [jquery](https://jquery.com/) - Used in some of the clickable elements such as collapsable 'hamburger' nav bar.
 - [popper.js](https://popper.js.org/) - Used in some of the clickable elements such as collapsable 'hamburger' nav bar.
+- [flexslider](http://flexslider.woothemes.com/) -  Used for hero image slider on home page.
+- [Email](https://www.emailjs.com/) - Used to send email form.
+- [RapidApi](https://rapidapi.com/) - Used to gain access to [TripAdvisorAPI](https://rapidapi.com/apidojo/api/tripadvisor1), [SkyScannerAPI](https://rapidapi.com/skyscanner/api/skyscanner-flight-search)
+- [OpenWeatherMapAPI](https://openweathermap.org/api) -  Used to get data for 5-day weather forecasts.
+- [GoogleMapJavascriptApi](https://developers.google.com/maps/documentation/javascript/overview) - Used to render google maps to display Trip Advisor data. 
 - [Font Awesome](https://fontawesome.com/) - Font Awesome was used to add social icons throughout the site and improve overall design and legibility.
 - [Google Fonts](https://fonts.google.com/) - Google Fonts was used to import 'Roboto' and 'Exo' fonts in the style.css stylesheet.
 - [Git](https://git-scm.com/) - Git was used to allow for tracking of any changes in the code and for the version control.
