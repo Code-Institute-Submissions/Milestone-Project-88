@@ -1,6 +1,6 @@
 # The Patagonian Experience
 
-<img src="./assets/images/readme/responsiceDesign" width="100%" >
+<img src="./assets/images/readme/responsiveDesign" width="100%" >
 
 ### Code Institute - Milestone Project Two: Interactive Frontend Development
 
@@ -34,9 +34,9 @@ I wanted the website to look clean but also enticing and to showcase the best of
 
 In terms of the overall design, I wanted the website to feel modern but not overally stylised or minimalistic. I wanted something easily accessible and readable with obvious calls to action. The initial wireframe for the home page is shown below and while the design evolved during detailed design I think it still gives a strong sense of the final website. 
 
-All wireframes created for the project can be found [here](https://github.com/allanahmurphy/AbbeyPhysio_MS1/wireframes). The wireframes were created using [Balsamiq](https://balsamiq.com/).  
+All wireframes created for the project can be found [here](https://github.com/allanahmurphy/Milestone-Project-2/tree/master/wireframes). The wireframes were created using [Balsamiq](https://balsamiq.com/).  
 
-<img src="./wireframes/wireframelandingpage.png" width="50%">
+<img src="./wireframes/homePageMobile.png" width="20%"><img src="./wireframes/homePageLaptop.png" width="50%"><img src="./wireframes/homePageTablet.png" width="30%">
 
 ## Features
 
