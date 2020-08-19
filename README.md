@@ -188,11 +188,11 @@ A thorough review was also done across all pages and links to ensure they were m
 Chrome developer tools was used to undertake a performance audit of each page. Initially there were significant performance issues due to the size of the image files. There were reduced and resized using [Tiny jpg](https://tinyjpg.com/) and [ResizeImage](https://resizeimage.net/). This significantly improved the load time of the pages. 
 ### Known issues
 
-I've fixed the header to the top of the screen as I think this makes website easier to navigate. I dropped the content below this so there is no content blocked. However, when navigating to one of the in page anchors (Personal Training/Yoga and Pilates classes) the header blocks the heading. I've tried various fixes for this with no success. I've still left the navbar fixed as I believe the benefit of it outweighs the minor error. 
+I've fixed the header to the top of the screen as I think this makes website easier to navigate. I dropped the content below this so there is no content blocked. However, when navigating to one of the in page anchors within the Travel Info page the header blocks the heading. I've tried various fixes for this with no success. I've still left the navbar fixed as I believe the benefit of it outweighs the minor error. 
 
 ## Deployment
 
-There is  one branch of this project (master) and the [deployed version](https://allanahmurphy.github.io/AbbeyPhysio_MS1/) of this site is the most current.
+There is  one branch of this project (master) and the [deployed version](https://allanahmurphy.github.io/Milestone-Project-2/index.html) of this site is the most current.
 
 ### Deployment Steps
 To deploy this page to GitHub Pages from its repository, the following steps were taken:
@@ -219,31 +219,53 @@ More information on cloning from github can be found [here](https://help.github.
 
 #### Code
 
-Code was taken directly from the following sources and adjusted to fit the website:
+Code was taken directly or adapted from the following sources and adjusted to fit the website:
 
 * [Bootstrap Collapse Navbar](https://getbootstrap.com/docs/4.1/components/navbar/);
 * [Bootstrap Modal Popups](https://getbootstrap.com/docs/4.1/components/modal/);
 * [Bootstrap Forms](https://getbootstrap.com/docs/4.1/components/forms/);
-* [Code Institute Whiskey Pages Example](https://github.com/Code-Institute-Solutions/BootstrappingYourNextBigIdea-BS4/tree/master/04-BeyondBootstrap/03-cleaning_up_our_content);
-* [Google Developer-Adding embedded google maps with marker](https://developers.google.com/maps/documentation/javascript/adding-a-google-map);
-* [Horizontal Rule with fade styling](https://codepen.io/ibrahimjabbari/pen/ozinB**/).
+* [Horizontal Rule with fade styling](https://codepen.io/ibrahimjabbari/pen/ozinB**/);
+* [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview);
+* [Read More button Tutorial](https://www.youtube.com/watch?v=uI18xGocVnw);
+* [Open Weather Api Examples](https://openweathermap.org/api/one-call-api#list) & [here](https://bithacker.dev/fetch-weather-openweathermap-api-javascript);
+* [Email Validation](https://www.tutorialspoint.com/javascript/javascript_form_validations.htm);
+* [Multiple Onload Code](https://www.htmlgoodies.com/beyond/javascript/article.php/3724571/using-multiple-javascript-onload-functions.htm);
+
+Copied or adpated code is also referenced within the HTML, CSS and JS file comments.
 
 #### Content
- I, or the business owner, wrote the majority of the content with some text copied from the sources below:
+The content was taken from a variety of sources as outlined below. 
 
-* [World Health Organisation](https://www.who.int/news-room/fact-sheets/detail/musculoskeletal-conditions);
-* [Irish Society of Chartered Physiotherapists](https://www.iscp.ie/maintain-your-health/sports-injuries);
-* [UK Society of Chartered Physiotherapists](https://www.csp.org.uk/conditions/chronic-pain).
+* Attractions
+- Torres Del Paine - [Lonely Planet](https://www.lonelyplanet.com/chile/southern-patagonia/parque-nacional-torres-del-paine)
+- El Chalten - [Lonely Planet](https://www.lonelyplanet.com/argentina/patagonia/el-chalten)
+- Ushuaia - [Lonely Planet](https://www.lonelyplanet.com/argentina/tierra-del-fuego/ushuaia)
+- Perito Moreno - [Lonely Planet](https://www.lonelyplanet.com/argentina/patagonia/parque-nacional-los-glaciares-south)
+
+* Travel Info
+- How to get there - [Worldly Adventurer](https://www.worldlyadventurer.com/how-to-get-to-patagonia/)
+- What to pack - [Quasarex](https://www.quasarex.com/patagonia/packing-list)
+- When to Go - [US News](https://travel.usnews.com/Chilean_Patagonia_Argentina/When_To_Visit/)
+
+Again these references are also outlined in the code comments. 
 
 ### Media
 
-The following is all images used on the website and the source, most were found using google image advanced search with 'free to use, even commercially' criteria applied.
+The following is all images used on the website and the source.
 
-* The Hero Image was purchased from istock and can be found [here](https://www.istockphoto.com/ie/photo/therapist-treating-injured-knee-of-athlete-male-patient-gm952643772-260070904);
-* Picture of Head Physiotherapist, Paul Murphy, is the business owner and provided by him;
-* Picture of personal trainer was found via google free image search and can be found [here](https://pxhere.com/en/photo/435643);
-* Picture of man lifting weights was found via google free image searcg and can be found [here](https://www.wallpaperflare.com/man-lifting-weights-photo-fitness-men-sports-gym-exercise-wallpaper-aaumd);
-* Picture of woman doing yoga pose can be found [here](https://www.pickpik.com/yoga-asana-pose-hatha-woman-white-53488).
+* The Hero images
+- Torres Del Paine - Developer's own image,
+- Perito Merono Glaciar - Image by [John Weinhardt](https://unsplash.com/@hansjuergen),
+- Mount Fitzroy El Chalten - Image by [Arto Marttinen](https://unsplash.com/@wandervisions),
+* Showcards
+- Torres del Paine Sunset - Image by [Samuel Chenard](https://unsplash.com/@samuelchenard),
+- Mount FitzRoy with lake - Image by [Lia Tzanidaki](https://unsplash.com/@liatza),
+- Town of Ushuaia - Image by [66 north](https://unsplash.com/@66north),
+* Attractions
+- Grey Glaciar (Torres Del Paine) - Developer's own image, 
+- Mount FitzRoy with Highway - Photo by [Bruno De Regge](https://unsplash.com/s/photos/el-chalten?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText),
+- Perito Moreno - Photo by [Mike Swigunski](https://unsplash.com/s/photos/perito-moreno?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText),
+- Ushuaia at Sunset - Image by [Andres Zorko](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4073637),
 
 ### Acknowledgements
 
