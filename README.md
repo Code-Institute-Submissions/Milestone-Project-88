@@ -1,6 +1,6 @@
 # The Patagonian Experience
 
-<img src="./assets/images/readme/responsiveDesign" width="100%" >
+<img src="./assets/images/readme/responsiveDesign.png" width="100%" >
 
 ### Code Institute - Milestone Project Two: Interactive Frontend Development
 
