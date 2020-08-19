@@ -191,7 +191,7 @@ Chrome developer tools was used to undertake a performance audit of each page. I
 
 A number of email were sent from the website to check it was linking correctly to the emai given to EmailJS. It worked as demonstrated below. 
 
-<img src="./assets/images/readme/testEmail.jpg" width="100%" >
+<img src="./assets/images/readme/testEmail.png" width="100%" >
 
 ### Known issues
 
