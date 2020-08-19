@@ -14,13 +14,12 @@ function skyScanner (origin, destination) {
 
     .then(function(resp) { return resp.json(); }) // Convert data to json
     .then(function(data) {
-        console.log(data);
-        drawFlights(data)
+        drawFlights(data);
 	})
     .catch(err => {
 	console.log(err);
     });
-};
+}
 
 //Updates html on Travel Info page to show results for the first 5 flights retrieved by the Scanner API
 function drawFlights( d ) {
@@ -29,8 +28,8 @@ function drawFlights( d ) {
     for (i = 0; i < 5; i++){
         var fullDate = d.Quotes[i].OutboundLeg.DepartureDate;
         var shortDate = fullDate.substring(0, 10);
-        document.getElementById('date__' + [i]).innerHTML = shortDate
-        document.getElementById('price_' + [i]).innerHTML = d.Quotes[i].MinPrice
-        document.getElementById('carrier_' + [i]).innerHTML = d.Carriers[0].Name
+        document.getElementById('date__' + [i]).innerHTML = shortDate;
+        document.getElementById('price_' + [i]).innerHTML = d.Quotes[i].MinPrice;
+        document.getElementById('carrier_' + [i]).innerHTML = d.Carriers[0].Name;
     }
-};
+}

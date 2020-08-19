@@ -128,14 +128,14 @@ Within the home page the following features are included (as well as the above):
 
 #### Code Validation
 
-Each page was ran through the W3C HTML validator and the stylesheet through the CSS validator. The following errors were flagged and corrected:
+Each page was ran through the W3C HTML validator, the stylesheet through the CSS validator and the javascript files through JS hint. The following errors were flagged and corrected:
 
-- Originally had anchors within buttons in the header which produced an error, changed to style anchors to look like buttons instead;
-- Placeholder for form input for type date;
-- Incorrect character escape on whitespace, removed this whitespace and created gaps with margins instead;
-- arialabelledby related to no element ID, changed this to arialabel to solve.
+- Images missing alt attribute;
+- Frameborder obselete for iframe;
+- type for javascript sources not required;
+- Missing semicolons and unnesscessary semicolons in JS files;
 
-There was additional warnings in relation to the date which flagged the date type would not be recognised on all browsers types. When tested it worked in each browser bar Safari. There were no errors or warnings flagged in the CSS validator. 
+There was additional warnings for the JavaScript files which highlighted undefined functions and variables, however these are defined in external JS libraries read in prior to the project JS files. There was also some warnings in relation to Internet Explorer compatibility which could not be addressed.
 
 #### Browser Compatibility
 
@@ -146,6 +146,7 @@ The live website, hosted on gitpages, has been opened and tested on multiple bro
 * Microsoft Edge
 * Internet Explorer
 * Firefox
+* Opera
 
 Overall the website worked well and appeared as intended on different sizes across different browsers with the exception of IE where a number of elements were unexpectedly displaced. Firefox and IE were also slower than other browsers, I reduced the image sizes to improve this. Below is a summary of the browser testing. 
 

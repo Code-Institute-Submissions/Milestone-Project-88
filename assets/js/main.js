@@ -176,7 +176,7 @@ function validate() {
     var query = document.myForm.query.value;
          
     if (atpos < 1 || ( dotpos - atpos < 2 )) {
-        alert("Please enter correct email ID")
+        alert("Please enter correct email ID");
         document.myForm.Email.focus() ;
         return false;
     }
